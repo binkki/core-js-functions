@@ -18,7 +18,7 @@
  *
  */
 function getCurrentFunctionName() {
-  throw new Error('Not implemented');
+  return String(this[Object.keys(this)[0]]).split(' ')[1].replace('()', '');
 }
 
 /**
