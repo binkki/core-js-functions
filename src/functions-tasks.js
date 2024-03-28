@@ -18,7 +18,7 @@
  *
  */
 function getCurrentFunctionName() {
-  return String(this[Object.keys(this)[0]]).split(' ')[1].replace('()', '');
+  return getCurrentFunctionName.name;
 }
 
 /**
